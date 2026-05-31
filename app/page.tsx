@@ -5,10 +5,10 @@ import React from 'react';
 export default function Home() {
   // Datos de ejemplo para los 10 vehículos (Modificados con el campo 'puertas' en lugar de ubicación)
   const vehiculos = [
-    { id: 1, modelo: "PHelton", precio: "Q 1,850,000", motor: "4.0L Flat-6", km: "2,500 km", transmision: "PDK", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" },
-    { id: 2, modelo: "Yahel", precio: "Q 985,000", motor: "3.0L Bi-Turbo", km: "12,000 km", transmision: "M-Steptronic", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800" },
-    { id: 3, modelo: "Jimenez", precio: "Q 1,200,000", motor: "4.0L V8", km: "8,200 km", transmision: "Tiptronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=800" },
-    { id: 4, modelo: "Esquivel", precio: "Q 2,100,000", motor: "4.0L V8 Biturbo", km: "5,000 km", transmision: "9G-Tronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1520050206274-a1ae44613e6d?q=80&w=800" },
+    { id: 1, modelo: "Mama", precio: "Q 1,850,000", motor: "4.0L Flat-6", km: "2,500 km", transmision: "PDK", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" },
+    { id: 2, modelo: "Te", precio: "Q 985,000", motor: "3.0L Bi-Turbo", km: "12,000 km", transmision: "M-Steptronic", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800" },
+    { id: 3, modelo: "Quiero", precio: "Q 1,200,000", motor: "4.0L V8", km: "8,200 km", transmision: "Tiptronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=800" },
+    { id: 4, modelo: "Mucho", precio: "Q 2,100,000", motor: "4.0L V8 Biturbo", km: "5,000 km", transmision: "9G-Tronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1520050206274-a1ae44613e6d?q=80&w=800" },
     { id: 5, modelo: "Toyota Supra MK5", precio: "Q 525,000", motor: "3.0L I6", km: "15,000 km", transmision: "Auto", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=800" },
     { id: 6, modelo: "Ford Mustang Dark Horse", precio: "Q 740,000", motor: "5.0L V8 Coyote", km: "500 km", transmision: "Manual", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=800" },
     { id: 7, modelo: "Nissan GT-R Nismo", precio: "Q 1,950,000", motor: "3.8L V6 Twin-Turbo", km: "3,100 km", transmision: "GR6 Dual-Clutch", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1614162692292-7ac56d7fd701?q=80&w=800" },
