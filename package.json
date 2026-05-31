@@ -1,0 +1,13 @@
+{
+  "name": "roadking-gt",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.9.15"
+  }
+}
