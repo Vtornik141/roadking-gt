@@ -5,17 +5,17 @@ import React from 'react';
 export default function Home() {
   // Datos de ejemplo para los 10 vehículos (Modificados con el campo 'puertas' en lugar de ubicación)
   const vehiculos = [
-    { id: 1, modelo: "Porsche 911 GT3", precio: "Q 1,850,000", motor: "4.0L Flat-6", km: "2,500 km", transmision: "PDK", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" },
-    { id: 2, modelo: "BMW M4 Competition", precio: "Q 985,000", motor: "3.0L Bi-Turbo", km: "12,000 km", transmision: "M-Steptronic", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800" },
-    { id: 3, modelo: "Audi RS6 Avant", precio: "Q 1,200,000", motor: "4.0L V8", km: "8,200 km", transmision: "Tiptronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=800" },
-    { id: 4, modelo: "Mercedes-AMG G63", precio: "Q 2,100,000", motor: "4.0L V8 Biturbo", km: "5,000 km", transmision: "9G-Tronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1520050206274-a1ae44613e6d?q=80&w=800" },
-    { id: 5, modelo: "Toyota Supra MK5", precio: "Q 525,000", motor: "3.0L I6", km: "15,000 km", transmision: "Auto", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=800" },
-    { id: 6, modelo: "Ford Mustang Dark Horse", precio: "Q 740,000", motor: "5.0L V8 Coyote", km: "500 km", transmision: "Manual", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=800" },
-    { id: 7, modelo: "Nissan GT-R Nismo", precio: "Q 1,950,000", motor: "3.8L V6 Twin-Turbo", km: "3,100 km", transmision: "GR6 Dual-Clutch", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1614162692292-7ac56d7fd701?q=80&w=800" },
-    { id: 8, modelo: "Chevrolet Corvette Z06", precio: "Q 1,450,000", motor: "5.5L V8 NA", km: "1,200 km", transmision: "DCT", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1594247565868-80e5572ec11f?q=80&w=800" },
-    { id: 9, modelo: "Lamborghini Huracán Evo", precio: "Q 2,800,000", motor: "5.2L V10", km: "4,500 km", transmision: "LDF", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800" },
-    { id: 10, modelo: "Ferrari F8 Tributo", precio: "Q 3,200,000", motor: "3.9L V8 Turbo", km: "2,100 km", transmision: "7-Speed F1", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=800" },
-  ];
+    { id: 1, modelo: "Toyota Corolla", precio: "Q 115,000", motor: "1.8L 4 Cilindros", km: "45,000 km", transmision: "Automático", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1623869675781-80aa31012a5a?q=80&w=800" },
+    { id: 2, modelo: "Honda Civic", precio: "Q 125,000", motor: "1.5L Turbo", km: "38,000 km", transmision: "CVT", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=800" },
+    { id: 3, modelo: "Toyota Yaris", precio: "Q 85,000", motor: "1.5L 4 Cilindros", km: "52,000 km", transmision: "Automático", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?q=80&w=800" },
+    { id: 4, modelo: "Hyundai Accent", precio: "Q 78,000", motor: "1.4L 4 Cilindros", km: "61,000 km", transmision: "Automático", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=800" },
+    { id: 5, modelo: "Nissan Sentra", precio: "Q 98,000", motor: "1.8L 4 Cilindros", km: "33,000 km", transmision: "CVT", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800" },
+    { id: 6, modelo: "Kia Rio", precio: "Q 72,000", motor: "1.4L 4 Cilindros", km: "28,000 km", transmision: "Automático", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800" },
+    { id: 7, modelo: "Mazda 3", precio: "Q 135,000", motor: "2.0L SkyActiv", km: "22,000 km", transmision: "Automático", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800" },
+    { id: 8, modelo: "Toyota Hilux", precio: "Q 285,000", motor: "2.8L Diesel Turbo", km: "41,000 km", transmision: "Automático", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?q=80&w=800" },
+    { id: 9, modelo: "Ford Ranger", precio: "Q 265,000", motor: "2.5L 4 Cilindros", km: "55,000 km", transmision: "Manual", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800" },
+    { id: 10, modelo: "Mitsubishi L200", precio: "Q 245,000", motor: "2.4L Diesel", km: "67,000 km", transmision: "Manual", puertas: "4 Puertas", imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" },
+];
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-red-500 selection:text-white overflow-x-hidden">
