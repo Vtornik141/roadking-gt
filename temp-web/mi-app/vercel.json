@@ -1,4 +1,4 @@
 {
-  "buildCommand": "cd ../.. && pnpm --filter mi-app build",
-  "outputDirectory": "../../apps/mi-app/.next"
+  "buildCommand": "cd ../.. && pnpm --filter mi-web build",
+  "outputDirectory": "../../apps/mi-web/.next"
 }
