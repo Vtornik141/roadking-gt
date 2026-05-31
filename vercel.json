@@ -1,4 +1,0 @@
-{
-  "buildCommand": "pnpm --filter mi-app build",
-  "outputDirectory": "apps/mi-app/.next"
-}
