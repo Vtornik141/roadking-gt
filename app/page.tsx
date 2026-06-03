@@ -197,7 +197,6 @@ export default function Home() {
                 </div>
                 
                 <a 
-                  href={`https://wa.me/50255550000?text=Hola,%20solicito%20detalles%20del%20${encodeURIComponent(car.modelo)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full mt-8 block text-center bg-zinc-800 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all"
