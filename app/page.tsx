@@ -3,18 +3,108 @@
 import React from 'react';
 
 export default function Home() {
-  // Datos de ejemplo para los 10 vehículos (Modificados con el campo 'puertas' en lugar de ubicación)
+  // Datos reales para los 10 vehículos (Porsche de imagen + marcas solicitadas)
   const vehiculos = [
-    { id: 1, modelo: "Mama", precio: "Q 1,850,000", motor: "4.0L Flat-6", km: "2,500 km", transmision: "PDK", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" },
-    { id: 2, modelo: "Te", precio: "Q 985,000", motor: "3.0L Bi-Turbo", km: "12,000 km", transmision: "M-Steptronic", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800" },
-    { id: 3, modelo: "Quiero", precio: "Q 1,200,000", motor: "4.0L V8", km: "8,200 km", transmision: "Tiptronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=800" },
-    { id: 4, modelo: "Mucho", precio: "Q 2,100,000", motor: "4.0L V8 Biturbo", km: "5,000 km", transmision: "9G-Tronic", puertas: "5 Puertas", imagen: "https://images.unsplash.com/photo-1520050206274-a1ae44613e6d?q=80&w=800" },
-    { id: 5, modelo: "Toyota Supra MK5", precio: "Q 525,000", motor: "3.0L I6", km: "15,000 km", transmision: "Auto", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=800" },
-    { id: 6, modelo: "Ford Mustang Dark Horse", precio: "Q 740,000", motor: "5.0L V8 Coyote", km: "500 km", transmision: "Manual", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1584345604476-8ec5e12e42dd?q=80&w=800" },
-    { id: 7, modelo: "Nissan GT-R Nismo", precio: "Q 1,950,000", motor: "3.8L V6 Twin-Turbo", km: "3,100 km", transmision: "GR6 Dual-Clutch", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1614162692292-7ac56d7fd701?q=80&w=800" },
-    { id: 8, modelo: "Chevrolet Corvette Z06", precio: "Q 1,450,000", motor: "5.5L V8 NA", km: "1,200 km", transmision: "DCT", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1594247565868-80e5572ec11f?q=80&w=800" },
-    { id: 9, modelo: "Lamborghini Huracán Evo", precio: "Q 2,800,000", motor: "5.2L V10", km: "4,500 km", transmision: "LDF", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800" },
-    { id: 10, modelo: "Ferrari F8 Tributo", precio: "Q 3,200,000", motor: "3.9L V8 Turbo", km: "2,100 km", transmision: "7-Speed F1", puertas: "2 Puertas", imagen: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?q=80&w=800" },
+    { 
+      id: 1, 
+      modelo: "Porsche Panamera GTS (Mama)", 
+      precio: "Q 1,850,000", 
+      motor: "4.0L V8 Biturbo", 
+      km: "2,500 km", 
+      transmision: "PDK (Dual-Clutch)", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" // Imagen de Porsche real
+    },
+    { 
+      id: 2, 
+      modelo: "Toyota GR Supra 3.0", 
+      precio: "Q 525,000", 
+      motor: "3.0L Inline-6 Turbo", 
+      km: "15,000 km", 
+      transmision: "Automática 8-Vel", 
+      puertas: "2 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=800" 
+    },
+    { 
+      id: 3, 
+      modelo: "Honda Civic Type R (FL5)", 
+      precio: "Q 440,000", 
+      motor: "2.0L Turbo I4", 
+      km: "1,200 km", 
+      transmision: "Manual 6-Vel", 
+      puertas: "5 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1596711674175-5f6540c490cc?q=80&w=800"
+    },
+    { 
+      id: 4, 
+      modelo: "Nissan Skyline GT-R R34 (V-Spec II)", 
+      precio: "Q 1,400,000", 
+      motor: "2.6L Twin-Turbo I6", 
+      km: "62,000 km", 
+      transmision: "Manual 6-Vel", 
+      puertas: "2 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1628156108169-0e8c8942b109?q=80&w=800"
+    },
+    { 
+      id: 5, 
+      modelo: "Hyundai Ioniq 5 N", 
+      precio: "Q 680,000", 
+      motor: "Dual Electric Motor", 
+      km: "500 km", 
+      transmision: "Single-Speed Red.", 
+      puertas: "5 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1644781404179-87a4128f1cc6?q=80&w=800"
+    },
+    { 
+      id: 6, 
+      modelo: "Kia Stinger GT2 AWD", 
+      precio: "Q 395,000", 
+      motor: "3.3L Twin-Turbo V6", 
+      km: "35,000 km", 
+      transmision: "Automática 8-Vel", 
+      puertas: "5 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1622660144574-8b89e3a62d7c?q=80&w=800"
+    },
+    { 
+      id: 7, 
+      modelo: "Chevrolet Corvette Z06 (C8)", 
+      precio: "Q 1,450,000", 
+      motor: "5.5L V8 NA", 
+      km: "1,200 km", 
+      transmision: "DCT 8-Vel", 
+      puertas: "2 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1594247565868-80e5572ec11f?q=80&w=800"
+    },
+    { 
+      id: 8, 
+      modelo: "Ford Mustang Mach-E GT", 
+      precio: "Q 570,000", 
+      motor: "Dual Electric Motor", 
+      km: "8,500 km", 
+      transmision: "Single-Speed Red.", 
+      puertas: "5 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1616859740520-22c6e61266b0?q=80&w=800"
+    },
+    { 
+      id: 9, 
+      modelo: "Volkswagen Golf R (Mk8)", 
+      precio: "Q 415,000", 
+      motor: "2.0L Turbo I4", 
+      km: "11,200 km", 
+      transmision: "DCT 7-Vel", 
+      puertas: "5 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1616140640578-831631e78453?q=80&w=800"
+    },
+    { 
+      id: 10, 
+      modelo: "Suzuki Jimny 5-Door GLX", 
+      precio: "Q 235,000", 
+      motor: "1.5L I4", 
+      km: "150 km", 
+      transmision: "Manual 5-Vel", 
+      puertas: "5 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1619623832161-fb9f82d2454b?q=80&w=800"
+    },
   ];
 
   return (
@@ -36,9 +126,8 @@ export default function Home() {
         </a>
       </nav>
 
-      {/* HERO SECTION - MODIFICADO (Fondo elegante con paleta llamativa sin carros) */}
+      {/* HERO SECTION */}
       <section id="hero" className="relative h-screen w-full flex flex-col items-center justify-center text-center px-4 overflow-hidden border-b border-zinc-900">
-        {/* Gradientes e iluminación de fondo premium */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[130px]"></div>
           <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-zinc-700/10 rounded-full blur-[150px]"></div>
@@ -68,13 +157,12 @@ export default function Home() {
             <h2 className="text-4xl font-black uppercase italic tracking-tighter">Inventario Disponible</h2>
             <p className="text-zinc-500 text-sm mt-2">Unidades disponibles en RoadKing-GT</p>
           </div>
-          <div className="text-zinc-600 text-xs font-bold">10 RESULTADOS</div>
+          <div className="text-zinc-600 text-xs font-bold">{vehiculos.length} RESULTADOS</div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {vehiculos.map((car) => (
             <div key={car.id} className="group bg-zinc-900/60 border border-zinc-800/60 overflow-hidden hover:border-red-600/50 transition-all duration-500 rounded-lg flex flex-col justify-between">
-              {/* Espacio optimizado para fotos tomadas con teléfono celular */}
               <div className="relative h-64 overflow-hidden bg-black">
                 <img 
                   src={car.imagen} 
@@ -90,7 +178,7 @@ export default function Home() {
                   <p className="text-red-500 font-black text-xl mt-1">{car.precio}</p>
                 </div>
                 
-                {/* GRID DE DETALLES - MODIFICADO (Ubicación reemplazada por Puertas) */}
+                {/* GRID DE DETALLES - Nombres de campos mantenidos */}
                 <div className="grid grid-cols-2 gap-4 mt-6 border-t border-zinc-800/80 pt-6 text-[10px] font-bold uppercase text-zinc-500">
                   <div className="flex flex-col">
                     <span>Motor</span>
@@ -159,7 +247,7 @@ export default function Home() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="text-3xl font-black uppercase italic mb-4">Roadking<span className="text-red-600">GT</span></div>
           <p className="text-zinc-500 text-[10px] uppercase font-bold tracking-widest">Ciudad de Guatemala, Zona 10.</p>
-          <p className="text-zinc-200 font-bold mt-2">+502 5555 4444</p>
+          <p className="text-zinc-200 font-bold mt-2">+502 45368202</p>
         </div>
         <div className="flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">
           <a href="#" className="hover:text-white transition-colors">Instagram</a>
@@ -174,5 +262,3 @@ export default function Home() {
     </div>
   );
 }
-
-//Mamachata
