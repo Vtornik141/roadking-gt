@@ -3,107 +3,106 @@
 import React from 'react';
 
 export default function Home() {
-  // Datos reales para los 10 vehículos (Porsche de imagen + marcas solicitadas)
   const vehiculos = [
     { 
       id: 1, 
-      modelo: "Porsche Panamera GTS (Mama)", 
-      precio: "Q 1,850,000", 
-      motor: "4.0L V8 Biturbo", 
-      km: "2,500 km", 
-      transmision: "PDK (Dual-Clutch)", 
+      modelo: "Toyota Corolla SE 2018", 
+      precio: "Q 97,900", 
+      motor: "2.0L 4 cilindros", 
+      km: "124,500 km", 
+      transmision: "Mecánica", 
       puertas: "4 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" // Imagen de Porsche real
+      imagen: "https://images.unsplash.com/photo-1590362891991-f20dc2387a48?q=80&w=800"
     },
     { 
       id: 2, 
-      modelo: "Toyota GR Supra 3.0", 
-      precio: "Q 525,000", 
-      motor: "3.0L Inline-6 Turbo", 
-      km: "15,000 km", 
-      transmision: "Automática 8-Vel", 
-      puertas: "2 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=800" 
+      modelo: "Honda Civic LX 2018", 
+      precio: "Q 78,000", 
+      motor: "2.0L 4 cilindros", 
+      km: "92,300 km", 
+      transmision: "Automática", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?q=80&w=800" 
     },
     { 
       id: 3, 
-      modelo: "Honda Civic Type R (FL5)", 
-      precio: "Q 440,000", 
-      motor: "2.0L Turbo I4", 
-      km: "1,200 km", 
-      transmision: "Manual 6-Vel", 
-      puertas: "5 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1596711674175-5f6540c490cc?q=80&w=800"
+      modelo: "Hyundai Accent 2018", 
+      precio: "Q 78,000", 
+      motor: "1.4L 4 cilindros", 
+      km: "88,700 km", 
+      transmision: "Automática", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800"
     },
     { 
       id: 4, 
-      modelo: "Nissan Skyline GT-R R34 (V-Spec II)", 
-      precio: "Q 1,400,000", 
-      motor: "2.6L Twin-Turbo I6", 
-      km: "62,000 km", 
-      transmision: "Manual 6-Vel", 
-      puertas: "2 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1628156108169-0e8c8942b109?q=80&w=800"
+      modelo: "Kia Rio LX 2018", 
+      precio: "Q 63,000", 
+      motor: "1.6L 4 cilindros", 
+      km: "110,800 km", 
+      transmision: "Automática", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=800"
     },
     { 
       id: 5, 
-      modelo: "Hyundai Ioniq 5 N", 
-      precio: "Q 680,000", 
-      motor: "Dual Electric Motor", 
-      km: "500 km", 
-      transmision: "Single-Speed Red.", 
-      puertas: "5 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1644781404179-87a4128f1cc6?q=80&w=800"
+      modelo: "Mazda 3 2018", 
+      precio: "Q 71,000", 
+      motor: "2.0L 4 cilindros", 
+      km: "97,400 km", 
+      transmision: "Tiptronic", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800"
     },
     { 
       id: 6, 
-      modelo: "Kia Stinger GT2 AWD", 
-      precio: "Q 395,000", 
-      motor: "3.3L Twin-Turbo V6", 
-      km: "35,000 km", 
-      transmision: "Automática 8-Vel", 
-      puertas: "5 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1622660144574-8b89e3a62d7c?q=80&w=800"
+      modelo: "Nissan Versa 2019", 
+      precio: "Q 74,500", 
+      motor: "1.6L 4 cilindros", 
+      km: "84,600 km", 
+      transmision: "Mecánica", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=800"
     },
     { 
       id: 7, 
-      modelo: "Chevrolet Corvette Z06 (C8)", 
-      precio: "Q 1,450,000", 
-      motor: "5.5L V8 NA", 
-      km: "1,200 km", 
-      transmision: "DCT 8-Vel", 
-      puertas: "2 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1594247565868-80e5572ec11f?q=80&w=800"
+      modelo: "Volkswagen Jetta 2018", 
+      precio: "Q 89,000", 
+      motor: "1.4L Turbo", 
+      km: "102,900 km", 
+      transmision: "Automática", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1604285885558-8687ba13866d?q=80&w=800"
     },
     { 
       id: 8, 
-      modelo: "Ford Mustang Mach-E GT", 
-      precio: "Q 570,000", 
-      motor: "Dual Electric Motor", 
-      km: "8,500 km", 
-      transmision: "Single-Speed Red.", 
-      puertas: "5 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1616859740520-22c6e61266b0?q=80&w=800"
+      modelo: "Suzuki Swift GLX 2019", 
+      precio: "Q 82,500", 
+      motor: "1.2L 4 cilindros", 
+      km: "67,800 km", 
+      transmision: "Automática", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fd?q=80&w=800"
     },
     { 
       id: 9, 
-      modelo: "Volkswagen Golf R (Mk8)", 
-      precio: "Q 415,000", 
-      motor: "2.0L Turbo I4", 
-      km: "11,200 km", 
-      transmision: "DCT 7-Vel", 
-      puertas: "5 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1616140640578-831631e78453?q=80&w=800"
+      modelo: "Ford Ranger XLT 2018", 
+      precio: "Q 145,000", 
+      motor: "3.2L Turbo Diésel", 
+      km: "138,000 km", 
+      transmision: "Automática", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?q=80&w=800"
     },
     { 
       id: 10, 
-      modelo: "Suzuki Jimny 5-Door GLX", 
-      precio: "Q 235,000", 
-      motor: "1.5L I4", 
-      km: "150 km", 
-      transmision: "Manual 5-Vel", 
-      puertas: "5 Puertas", 
-      imagen: "https://images.unsplash.com/photo-1619623832161-fb9f82d2454b?q=80&w=800"
+      modelo: "Chevrolet Colorado 2018", 
+      precio: "Q 138,000", 
+      motor: "2.5L 4 cilindros", 
+      km: "121,500 km", 
+      transmision: "Mecánica", 
+      puertas: "4 Puertas", 
+      imagen: "https://images.unsplash.com/photo-1553440569-bfc1015e5c56?q=80&w=800"
     },
   ];
 
@@ -178,7 +177,6 @@ export default function Home() {
                   <p className="text-red-500 font-black text-xl mt-1">{car.precio}</p>
                 </div>
                 
-                {/* GRID DE DETALLES - Nombres de campos mantenidos */}
                 <div className="grid grid-cols-2 gap-4 mt-6 border-t border-zinc-800/80 pt-6 text-[10px] font-bold uppercase text-zinc-500">
                   <div className="flex flex-col">
                     <span>Motor</span>
@@ -212,7 +210,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FORMULARIO COTIZAR (INTACTO) */}
+      {/* FORMULARIO COTIZAR */}
       <section id="cotizar" className="py-24 px-6 md:px-12 max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-black uppercase italic tracking-tighter">Vender o Cotizar</h2>
@@ -242,12 +240,12 @@ export default function Home() {
         </form>
       </section>
 
-      {/* FOOTER / CONTACTO (INTACTO) */}
+      {/* FOOTER */}
       <footer id="contacto" className="py-20 border-t border-zinc-900 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-10 max-w-7xl mx-auto">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="text-3xl font-black uppercase italic mb-4">Roadking<span className="text-red-600">GT</span></div>
           <p className="text-zinc-500 text-[10px] uppercase font-bold tracking-widest">Ciudad de Guatemala, Zona 10.</p>
-          <p className="text-zinc-200 font-bold mt-2">+502 45368202</p>
+          <p className="text-zinc-200 font-bold mt-2"></p>
         </div>
         <div className="flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500">
           <a href="#" className="hover:text-white transition-colors">Instagram</a>
